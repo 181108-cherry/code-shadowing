@@ -4,6 +4,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.codeshadowing.dto.ProductRequestDto;
 import org.example.codeshadowing.dto.ProductResponseDto;
+import org.example.codeshadowing.service.ProductService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +19,7 @@ public class ProductController {
     private final ProductService productService;
 
     @PostMapping
-    public ResponseEntity<ProductResponseDto> createProduct(@Valid @RequestBody ProductRequest request) {
+    public ResponseEntity<ProductResponseDto> createProduct(@Valid @RequestBody ProductRequestDto request) {
         ProductResponseDto response = productService.createProduct(request);
         return ResponseEntity.created(URI.create("/api/products/" + response.getId())).body(response);
     }
@@ -29,8 +30,8 @@ public class ProductController {
     }
 
     @GetMapping
-    public ResponseEntity<List<ProductResponseDto>> getProduct(){
-        return ResponseEntity.ok(productService.getProduct());
+    public ResponseEntity<List<ProductResponseDto>> getProducts(){
+        return ResponseEntity.ok(productService.getProducts());
     }
 
     @PutMapping("/{id}")
