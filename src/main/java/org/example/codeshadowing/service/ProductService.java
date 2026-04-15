@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.example.codeshadowing.dto.ProductRequestDto;
 import org.example.codeshadowing.dto.ProductResponseDto;
 import org.example.codeshadowing.entity.Product;
+import org.example.codeshadowing.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
