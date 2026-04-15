@@ -21,12 +21,12 @@ public class Product {
     @Column(nullable = false)
     private Integer price;
 
-    public Product (String name, Integer price){
+    public Product(String name, Integer price) {
         this.name = name;
         this.price = price;
     }
 
-    public void update(String name, Integer price){
+    public void update(String name, Integer price) {
         this.name = name;
         this.price = price;
     }
