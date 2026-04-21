@@ -1,4 +1,4 @@
-package org.example.codeshadowing.first.dto;
+package org.example.codeshadowing.product.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

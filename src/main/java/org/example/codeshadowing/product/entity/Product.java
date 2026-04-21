@@ -1,4 +1,4 @@
-package org.example.codeshadowing.third.entity;
+package org.example.codeshadowing.product.entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @Table(name = "products")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class ProductEntity {
+public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +21,7 @@ public class ProductEntity {
     @Column(nullable = false)
     private Integer price;
 
-    public ProductEntity(String name, Integer price) {
+    public Product(String name, Integer price) {
         this.name = name;
         this.price = price;
     }

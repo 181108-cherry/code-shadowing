@@ -1,16 +1,16 @@
-package org.example.codeshadowing.third.dto;
+package org.example.codeshadowing.product.dto;
 
 import lombok.Getter;
-import org.example.codeshadowing.third.entity.ProductEntity;
+import org.example.codeshadowing.product.entity.Product;
 
 @Getter
-public class ResponseDto {
+public class ProductResponseDto {
 
     private final Long id;
     private final String name;
     private final Integer price;
 
-    public ResponseDto(ProductEntity product){
+    public ProductResponseDto(Product product){
         this.id = product.getId();
         this.name = product.getName();
         this.price = product.getPrice();
