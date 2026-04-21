@@ -1,10 +1,10 @@
-package org.example.codeshadowing.controller;
+package org.example.codeshadowing.first.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.example.codeshadowing.dto.ProductRequestDto;
-import org.example.codeshadowing.dto.ProductResponseDto;
-import org.example.codeshadowing.service.ProductService;
+import org.example.codeshadowing.first.dto.ProductRequestDto;
+import org.example.codeshadowing.first.dto.ProductResponseDto;
+import org.example.codeshadowing.first.service.ProductService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

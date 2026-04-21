@@ -1,4 +1,4 @@
-package org.example.codeshadowing.entity;
+package org.example.codeshadowing.first.entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;

@@ -1,7 +1,7 @@
-package org.example.codeshadowing.dto;
+package org.example.codeshadowing.first.dto;
 
 import lombok.Getter;
-import org.example.codeshadowing.entity.Product;
+import org.example.codeshadowing.first.entity.Product;
 
 @Getter
 public class ProductResponseDto {
